@@ -13,8 +13,8 @@ export default function About() {
                 <BadgeCheck className="w-8 h-8 text-white" />
               </div>
               <blockquote className="text-lg font-medium leading-relaxed mb-6">
-                "Convierto el cumplimiento del Decreto 1072 en una ventaja
-                competitiva real — no en una carpeta estática."
+                &ldquo;Convierto el cumplimiento del Decreto 1072 en una ventaja
+                competitiva real — no en una carpeta estática.&rdquo;
               </blockquote>
               <div className="border-t border-white/20 pt-6">
                 <p className="font-bold text-white">Milena Rengifo</p>
