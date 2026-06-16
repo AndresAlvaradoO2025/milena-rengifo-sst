@@ -20,7 +20,7 @@ export default function Process() {
                 <div className="hidden lg:block absolute top-6 left-[calc(50%+1.5rem)] w-[calc(100%-1rem)] h-0.5 bg-gradient-to-r from-[#E8610A]/40 to-[#E8610A]/10 z-0" />
               )}
               <div
-                className="relative bg-white rounded-2xl p-8 text-center border-t-[3px] border-t-[#2E7D52] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                className="relative bg-white rounded-2xl p-8 text-center border-t-[3px] border-t-[#2E7D52] transition-all duration-200 hover:shadow-xl hover:border-t-[#E8610A]"
                 style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.10)" }}
               >
                 {/* Number circle */}

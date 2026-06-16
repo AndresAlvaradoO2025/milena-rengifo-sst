@@ -29,7 +29,7 @@ export default function Footer() {
             <ul className="space-y-2">
               {NAV_LINKS.map((l) => (
                 <li key={l.href}>
-                  <a href={l.href} className="text-xs hover:text-white transition-colors">
+                  <a href={l.href} className="text-xs hover:text-white transition-colors cursor-pointer">
                     {l.label}
                   </a>
                 </li>

@@ -16,7 +16,7 @@ export default function WhyMe() {
           {REASONS.map((r) => (
             <div
               key={r.title}
-              className="bg-white rounded-2xl p-8 border-t-[3px] border-t-[#2E7D52] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              className="bg-white rounded-2xl p-8 border-t-[3px] border-t-[#2E7D52] transition-all duration-200 hover:shadow-xl hover:border-t-[#E8610A]"
               style={{ boxShadow: "0 4px 24px rgba(0,0,0,0.10)" }}
             >
               <div className="mb-5">

@@ -58,9 +58,10 @@ export default function Navbar() {
 
           {/* Mobile toggle */}
           <button
-            className="md:hidden text-white p-2"
+            className="md:hidden text-white flex items-center justify-center min-w-[44px] min-h-[44px] cursor-pointer"
             onClick={() => setOpen(!open)}
-            aria-label="Menú"
+            aria-label={open ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={open}
           >
             {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -68,14 +69,18 @@ export default function Navbar() {
       </div>
 
       {/* Mobile menu */}
-      {open && (
-        <div className="md:hidden bg-[#1B2E4B] border-t border-white/10 px-4 pb-4">
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-200 ease-out ${
+          open ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="bg-[#1B2E4B] border-t border-white/10 px-4 pb-4">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block py-3 text-gray-300 hover:text-white text-sm font-medium border-b border-white/5"
+              className="block py-3 text-gray-300 hover:text-white text-sm font-medium border-b border-white/5 cursor-pointer transition-colors"
             >
               {l.label}
             </a>
@@ -84,12 +89,12 @@ export default function Navbar() {
             href={WA_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-3 block text-center bg-[#E8610A] hover:bg-[#cf540a] text-white text-sm font-semibold px-4 py-3 rounded-lg transition-colors"
+            className="mt-3 block text-center bg-[#E8610A] hover:bg-[#cf540a] text-white text-sm font-semibold px-4 py-3 rounded-lg transition-colors cursor-pointer"
           >
             Contacto
           </a>
         </div>
-      )}
+      </div>
     </header>
   );
 }

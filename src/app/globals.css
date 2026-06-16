@@ -9,8 +9,13 @@
   body {
     color: #374151;
     background: white;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
     line-height: 1.7;
+  }
+
+  :focus-visible {
+    outline: 2px solid #E8610A;
+    outline-offset: 3px;
+    border-radius: 4px;
   }
 }
 
@@ -30,4 +35,11 @@
 
 .wa-ping {
   animation: ping-slow 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wa-float,
+  .wa-ping {
+    animation: none;
+  }
 }

@@ -28,7 +28,7 @@ export default function CTA() {
           Solicitar diagnóstico gratuito por WhatsApp
         </a>
 
-        <p className="text-gray-500 text-sm mt-4">
+        <p className="text-gray-400 text-sm mt-4">
           Sin compromiso · Respuesta en menos de 24 horas
         </p>
       </div>
